@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.loudlit.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.loudlit.app.MENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".novels"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.loudlit.app.NOVELS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".poetry"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.loudlit.app.POETRY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".childrens"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.loudlit.app.CHILDRENS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".historical"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.loudlit.app.HISTORICAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".shortStories"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.loudlit.app.SHORTSTORIES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Reader"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.loudlit.app.READER" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JoshActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.loudlit.app.JOSHACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>
